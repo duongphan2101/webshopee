@@ -1,0 +1,246 @@
+.app{
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: var(--header-height);
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-item-link,
+.header__navbar-item {
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* .user-name {
+    font-weight: 500;
+    border: 1px solid white;
+} */
+
+.header__navbar-list{
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.borderleft::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 16px;
+    border-left: 1px solid #FB9086;
+    right: -9px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-item-link {
+    padding: 0 2px;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .7);
+}
+
+.header__navbar-item--blod {
+    color: var(--white-color);
+    cursor: text;
+}
+
+/* header qr*/
+
+.header__navbar-item:hover .header__qr{
+    display: block;
+}
+
+.header__qr {
+    position: absolute;
+    background-color: var(--white-color);
+    width: 180px;
+    left: -15px;
+    top: 110%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    display: none;
+    border-radius: 2px;
+    animation: fadeIn ease .5s;
+}
+
+.header__qr--img{
+    width: 100%;
+}
+
+.header__qr-apps{
+    display: flex;
+}
+
+.header__qr--img-download{
+    width: 50%;
+    padding: 0 5px;
+}
+
+.header__notify{
+    position: absolute;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    width: 405px;
+    right: 0;
+    top: 30px;
+    font-size: 1.3rem;
+    display: none;
+    animation: fadeIn ease-in .5;
+}
+
+.header__notify-newfeed {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+    cursor: auto;
+}
+
+.header__notify-item-img {
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+}
+
+.header__notify-item{
+    position: relative;
+    padding: 12px;
+    width: 100%;
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
+.header__notify-item:hover{
+    cursor: pointer;
+    background-color: rgba(0, 172, 252, 0);
+}
+
+.header__notify-item-link{
+    display: flex;
+}
+
+.header__notify-item-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.header__notify-item-sub{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #756F6E;
+    margin-top: 4px;
+}
+
+.footer__notify{
+    display: flex;
+}
+
+.footer__notify-link{
+    text-decoration: none;
+    color: var(--text-color);
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header__navbar-item:hover .header__notify{
+    display: block;
+}
+
+.header__notify::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.avt-user {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -5px;
+    top: -3px;
+}
+
+.user-name-text{
+    margin-left: 20px;
+    font-size: 1.4;
+    font-weight: 400;
+}
+
+.header__navbar--user-list {
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+    top: calc(100% + 6px);
+    right: 0;
+    width: 160px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    box-shadow: 0 1px 2px #e0e0e0;
+    display: none;
+}
+
+.header__navbar-item:hover .header__navbar--user-list{
+    display: block;
+}
+
+.header__navbar--user-item{
+    padding: 4px 16px;
+    font-size: 1.4rem;
+}
+
+.header__navbar--user-item a{
+    color: var(--black-color);
+}
+
+.check-out{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top: 0.0001px solid lightgrey;
+}
+
+.header__navbar--user-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 65%;
+    height: 8px;
+}
+
+.header__navbar--user-item:hover a{
+    color: #fe6433;
+}
