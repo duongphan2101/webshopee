@@ -517,6 +517,7 @@
     box-shadow: 0 0 3px #4e4a4a;
     display: none;
     overflow: hidden;
+    z-index: 11111;
 }
 
 
