@@ -433,6 +433,7 @@
     color: var(--text-color);
     cursor: pointer;
     position: relative;
+    z-index: 1111;
 }
 
 .header__search-selection:hover .header__search-option {
